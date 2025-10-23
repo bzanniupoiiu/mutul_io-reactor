@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🚀 C++ HTTP Server</title>
+<style>
+  * {box-sizing: border-box;}
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    height: 100vh;
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .container {
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    transition: transform .3s ease;
+  }
+  .container:hover {
+    transform: scale(1.03);
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  button {
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: none;
+    background: #fff;
+    color: #2575fc;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  button:hover {
+    background: #2575fc;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Welcome to My C++ HTTP Server</h1>
+    <p>This page is served directly from your C++ backend using Epoll and Socket API.</p>
+    <form action="/click" method="GET">
+      <button type="submit">Click Me!</button>
+    </form>
+  </div>
+</body>
+</html>
